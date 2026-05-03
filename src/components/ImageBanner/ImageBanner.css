@@ -31,3 +31,13 @@
   margin: 0 auto;
   background-color: #000;
 }
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .banner-item {
+    height: 250px;
+  }
+}

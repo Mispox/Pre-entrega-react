@@ -16,3 +16,12 @@
 nav {
   background-color: transparent; 
 }
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 12px;
+  }
+
+  .nav-list li {
+    font-size: 13px;
+  }
+}

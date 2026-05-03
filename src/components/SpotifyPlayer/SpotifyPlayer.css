@@ -8,3 +8,11 @@
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
 }
+
+@media (max-width: 480px) {
+  .spotify-container {
+    width: 200px;
+    bottom: 10px;
+    right: 10px;
+  }
+}

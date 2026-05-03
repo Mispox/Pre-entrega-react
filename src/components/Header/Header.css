@@ -47,3 +47,20 @@ header {
   letter-spacing: 6px;
   color: #cccccc;
 }
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .logo-top {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .logo-bottom {
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+  }
+}
