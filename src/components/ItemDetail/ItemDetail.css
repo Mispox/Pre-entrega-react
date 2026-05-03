@@ -98,3 +98,52 @@
 .detail-btn:hover {
   background-color: #c44d00;
 }
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .detail-image img {
+    width: 100%;
+  }
+
+  .detail-info {
+    width: 100%;
+  }
+
+  .detail-info h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .detail-image img {
+    width: 100%;
+  }
+
+  .detail-info {
+    width: 100%;
+    text-align: left;
+  }
+
+  .detail-info h2 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .detail-description {
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .detail-price {
+    text-align: left;
+  }
+}

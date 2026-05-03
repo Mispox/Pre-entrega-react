@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = () => {
-  const { cart, clearCart, getCartTotal, addToCart } = useCart();
+const { cart, setCart, clearCart, getCartTotal, addToCart } = useCart();
 
-  const handleRestar = (item) => {
-    if (item.quantity === 1) {
-      // Si llega a 1 y se resta, lo eliminamos
-      const nuevoCart = cart.filter(p => p.id !== item.id);
-      clearCart();
-      nuevoCart.forEach(p => addToCart(p, p.quantity));
-    } else {
-      addToCart(item, -1);
-    }
-  };
-
+ const handleRestar = (item) => {
+  if (item.quantity === 1) {
+    setCart(cart.filter(p => p.id !== item.id));
+  } else {
+    setCart(cart.map(p =>
+      p.id === item.id
+        ? { ...p, quantity: p.quantity - 1 }
+        : p
+    ));
+  }
+};
   if (cart.length === 0) {
     return (
       <div className="cart-container cart-empty">

@@ -145,3 +145,28 @@
 .btn-home:hover {
   background-color: #c44d00;
 }
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .cart-item-controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cart-total {
+    text-align: center;
+  }
+
+  .btn-vaciar {
+    font-size: 0.9rem;
+  }
+}
