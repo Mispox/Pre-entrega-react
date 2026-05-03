@@ -1,4 +1,3 @@
-import logo from "../../assets/react.svg";
 import { Nav } from "../Nav/Nav";
 import "./Header.css";
 
@@ -6,8 +5,11 @@ export const Header = () => {
   return (
     <header>
       <div className="logo-container">
-        <img src={logo} />
-        <span>Reactiva</span>
+        <img src="/img/murcielago.png" alt="logo" width="45" height="35" />
+        <div className="logo-text">
+          <span className="logo-top">Báthory</span>
+          <span className="logo-bottom">Books</span>
+        </div>
       </div>
       <Nav />
     </header>

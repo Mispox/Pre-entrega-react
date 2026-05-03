@@ -4,7 +4,10 @@ import { Header } from "./components/Header/Header";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 import { Hero } from "./components/Hero/Hero";
+import { ImageBanner } from "./components/ImageBanner/ImageBanner";
 import { Routes, Route } from "react-router-dom";
+import Cart from "./components/Cart/Cart";
+import { SpotifyPlayer } from "./components/SpotifyPlayer/SpotifyPlayer";
 
 function App() {
   return (
@@ -17,14 +20,17 @@ function App() {
               <div className="hero-wrapper">
                 <Hero />
               </div>
+              <ImageBanner />
               <ItemListContainer />
             </>
           } />
+          <Route path="/carrito" element={<Cart />} />
           <Route path="/product/:id" element={<ItemDetailContainer />} />
-          <Route path="/carrito" element={<h1>Carrito</h1>} />
+          <Route path="/productos" element={<ItemListContainer />} />
         </Routes>
       </main>
       <Footer />
+       <SpotifyPlayer />
     </>
   );
 }

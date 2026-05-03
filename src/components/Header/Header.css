@@ -12,3 +12,38 @@ header {
   font-size: 2rem;
   color: white;
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo-container span {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-top {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.logo-bottom {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  letter-spacing: 6px;
+  color: #cccccc;
+}

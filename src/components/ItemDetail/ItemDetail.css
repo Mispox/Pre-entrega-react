@@ -1,0 +1,100 @@
+.detail-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-image img {
+  width: 280px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #ffffff;
+}
+
+.detail-info h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0;
+  color: #8b0000; /* ← agregá esta línea */
+}
+
+.detail-description {
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.detail-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.detail-quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-quantity span {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #aaaaaa;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  width: fit-content;
+}
+
+.quantity-controls button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.quantity-controls span {
+  font-size: 1rem;
+  color: #ffffff;
+  min-width: 20px;
+  text-align: center;
+}
+
+.detail-btn {
+  padding: 1rem;
+  background-color: #e85d04;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.detail-btn:hover {
+  background-color: #c44d00;
+}
