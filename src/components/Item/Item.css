@@ -1,5 +1,6 @@
 .card {
   width: 20rem;
+  height: 42rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -10,6 +11,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s;
+  justify-content: space-between;
 }
 
 .card:hover {
