@@ -25,3 +25,16 @@ nav {
     font-size: 13px;
   }
 }
+.cart-badge {
+  background-color: #c1121f;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 6px;
+  min-width: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.2;
+}
